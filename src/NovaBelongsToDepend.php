@@ -55,6 +55,12 @@ class NovaBelongsToDepend extends BelongsTo
         };
     }
 
+    public function title($title)
+    {
+        $this->titleKey = $title;
+        return $this;
+    }
+
     public function options($options)
     {
         $this->options = collect($options);
